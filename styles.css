@@ -1,0 +1,82 @@
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows font */
+  background: #2a2238; /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* Calculator container */
+.calculator {
+  background: #3b2c52; /* Subtle purple tone */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+/* Display styling */
+.display {
+  width: 100%;
+}
+
+.display input {
+  width: 89%;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  color: #fff;
+  background: #2e2046; /* Dark display color */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equally spaced columns */
+  gap: 10px;
+}
+
+/* Button styling */
+button {
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #4a386e; /* Subtle purple button color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #5a467f; /* Slightly brighter on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Zero button spans two columns */
+button:nth-child(19) {
+  grid-column: span 2;
+  background-color:aquamarine;
+  color:#4a386e
+}
